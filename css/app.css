@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+	--background-color-gray: #bbb;
+	--background-color-white: #fefefe;
+	--background-button: orange;
+	--color-hover: darkorange;
+	--color-white: #fff;
+	--text-color: #000;
+}
+
+/* ++++++++++++++ GLOBAL STYLES ++++++++++++++ */
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(../img/bg.jpg);
+	color: var(--color-white);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 94rem;
+}
+
+.margin-left {
+	margin-left: 1.5rem;
+}
+
+.margin-left-right {
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+
+.margin-bottom-top {
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+.padding-top {
+	padding-top: 2rem;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* ++++++++++++++ HEADER ++++++++++++++ */
+
+.header {
+	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 1.6rem;
+	margin-top: 1.6rem;
+}
+
+.header__logo {
+	display: flex;
+	justify-content: center;
+}
+
+.header__logo img {
+	width: 50%;
+}
+
+.header__nav {
+	display: flex;
+	flex-direction: column;
+	font-weight: 700;
+	row-gap: 2rem;
+}
+
+.header__nav a {
+	color: var(--color-white);
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: color .3s ease-in-out;
+}
+
+.header__nav a:hover {
+	color: var(--color-hover);
+}
+
+/* ++++++++++++++ ABOUT ++++++++++++++ */
+
+.about__img {
+	background-image: url(../img/utensilios.jpg);
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 15rem;
+}
+
+.about__text p {
+	line-height: 2.5rem;
+}
+
+/* ++++++++++++++ LOCATION ++++++++++++++ */
+
+.differentials__list li {
+	list-style: none;
+}
+
+.differentials__list li::before {
+	content: "✂";
+	padding-right: 1rem;
+}
+
+.location__container iframe,
+.video iframe {
+	width: 100%;
+}
+
+.video iframe {
+	display: block;
+}
+
+/* ++++++++++++++ DIFFERENTIALS ++++++++++++++ */
+
+.differentials__img {
+	background-image: url(../img/diferenciales.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 15rem;
+}
+
+/* ++++++++++++++ FOOTER ++++++++++++++ */
+
+.footer {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer img {
+	width: 25%;
+}
+
+.footer p {
+	font-size: 1.2rem;
+}
+
+/* ############## PÁGINA PRODUCTOS ############## */
+
+.product {
+	background-color: var(--background-color-white);
+	border-radius: 1.5rem;
+	color: var(--text-color);
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2rem;
+	transition: outline .2s ease-in-out;
+	width: 90%;
+}
+
+.product:hover {
+	outline: 5px solid var(--color-hover);
+}
+
+.product:nth-child(2),
+.product:nth-child(3) {
+	margin-top: 2rem;
+}
+
+.product h2 {
+	font-size: 4rem;
+}
+
+.product .price {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+/* ############## PÁGINA CONTACTOS ############## */
+
+form,
+fieldset {
+	padding: 1rem;
+}
+
+legend {
+	font-weight: 700;
+	text-align: center;
+}
+
+.personal-data {
+	margin-bottom: 3rem;
+}
+
+.input input,
+.information select {
+	height: 4rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.input textarea {
+	padding: 1.5rem;
+}
+
+.information select {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.input input,
+.input label,
+.input textarea,
+.information label {
+	display: block;
+	margin-bottom: 1rem;
+	width: 100%;
+}
+
+.radio {
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+.information p,
+.information select {
+	margin-bottom: 2rem;
+}
+
+.buttons {
+	column-gap: 2rem;
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+button {
+	border: none;
+	border-radius: .5rem;
+	cursor: pointer;
+	font-weight: 700;
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	transition: all .3s ease-in-out;
+	width: 15rem;
+}
+
+button:hover {
+	background-color: var(--color-hover);
+	color: var(--color-white);
+}
+
+.working-days {
+	display: grid;
+	justify-content: center;
+	margin-top: 5rem;
+}
+
+.day {
+	text-align: center;
+}
+
+.day:nth-child(2),
+.day:nth-child(3) {
+	margin-top: 2rem;
+}
+
+.day p:nth-child(1) {
+	font-weight: 700;
+}

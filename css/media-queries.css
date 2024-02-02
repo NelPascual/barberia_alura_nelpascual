@@ -1,0 +1,171 @@
+@media only screen and (min-width: 540px) {
+	.header {
+		grid-template-columns: 1fr 2fr;
+	}
+
+	.header__nav {
+		column-gap: 4rem;
+		flex-direction: row;
+		row-gap: 0;
+	}
+
+	.header__nav a {
+		font-size: 1.8rem;
+	}
+
+	.about__img,
+	.differentials__img {
+		height: 20rem;
+	}
+
+	.footer img {
+		width: 20%;
+	}
+
+	/* ############## PÁGINA PRODUCTOS ############## */
+
+	.products__container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.product {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.product:nth-child(2),
+	.product:nth-child(3) {
+		margin-top: 0;
+	}
+
+	.product h2,
+	.product .price {
+		font-size: 2rem;
+	}
+
+	/* ############## PÁGINA CONTACTOS ############## */
+
+	form {
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+
+	.days {
+		column-gap: 7rem;
+		display: flex;
+		padding-bottom: 2rem;
+		padding-top: 2rem;
+	}
+
+	.day:nth-child(2),
+	.day:nth-child(3) {
+		margin-top: 0;
+	}
+
+	.day p:nth-child(1) {
+		padding-bottom: 1rem;
+	}
+}
+
+@media only screen and (min-width: 640px) {
+	.about {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+	}
+
+	.about__img {
+		background-position: center center;
+		height: 37rem;
+	}
+
+	.about__text {
+		padding-top: 0;
+	}
+
+	.differentials__container {
+		display: grid;
+		grid-template-columns: 1fr 1.5fr;
+	}
+
+	.differentials__list li {
+		margin-bottom: 1.5rem;
+	}
+
+	.differentials__img {
+		height: 25rem;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.main h1 {
+		font-size: 4.2rem;
+	}
+
+	.header__nav {
+		column-gap: 4rem;
+	}
+
+	.header__nav a {
+		font-size: 2rem;
+	}
+
+	.about {
+		grid-template-columns: 2fr 3fr;
+	}
+
+	.location__container h2,
+	.differentials h2 {
+		font-size: 3.4rem;
+	}
+
+	.header__logo img,
+	.footer img {
+		width: 15.6rem;
+	}
+
+	/* ############## PÁGINA CONTACTOS ############## */
+
+	form {
+		padding-left: 10rem;
+		padding-right: 10rem;
+	}
+}
+
+@media only screen and (min-width: 912px) {
+	.header__nav a {
+		font-size: 2.5rem;
+	}
+
+	.about {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	/* ############## PÁGINA PRODUCTOS ############## */
+
+	.product h2,
+	.product .price {
+		font-size: 3rem;
+	}
+}
+
+@media only screen and (min-width: 941px) {
+	.main h1,
+	.location__container h2,
+	.location__container p,
+	.differentials h2,
+	.differentials__list {
+		margin-left: 0;
+	}
+
+	.about__text {
+		margin-right: 0;
+	}
+
+	/* ############## PÁGINA CONTACTOS ############## */
+
+	form {
+		padding-left: 15rem;
+		padding-right: 15rem;
+	}
+}
